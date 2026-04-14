@@ -1,7 +1,8 @@
 body {
-    background: #f3f5f7;
-    font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f4f8;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,93 +11,71 @@ body {
 
 .card {
     max-width: 400px;
-    width: 90%;
+    margin: 40px auto;
     background: white;
-    padding: 25px;
-    border-radius: 20px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    padding: 20px;
     text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 h2 {
-    color: #143c7d;
+    color: #0b2c6f;
+    margin-top: 0;
 }
 
 .subtitle {
-    color: #555;
-    margin-bottom: 20px;
+    font-size: 14px;
+    color: #444;
 }
 
 .amount-box {
-    background: #e9fbf4;
-    padding: 20px;
-    border-radius: 15px;
-    margin-bottom: 20px;
-}
-
-.amount-box p {
-    margin: 0;
-    font-size: 14px;
+    background: #e7fbf4;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
 }
 
 .amount-box h1 {
-    color: #1a8f6b;
-    font-size: 32px;
-    margin: 10px 0 0;
+    color: #008060;
+    margin: 5px 0;
+    font-size: 2em;
 }
 
-.phone-input {
-    display: flex;
-    align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 8px;
-    margin-bottom: 15px;
-    background: #fff;
-}
-
-/* REMOVED: .country-code style as it's no longer used */
-
-.phone-input input {
-    border: none;
-    outline: none;
-    flex: 1;
-    font-size: 16px;
-}
-
-.pin-boxes {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.pin-box {
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    border-radius: 10px;
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 6px;
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
 
-.pin-box:focus {
-    outline: none;
-    border-color: #143c7d;
-    box-shadow: 0 0 5px rgba(20, 60, 125, 0.5);
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    background: #0b2c6f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
+button:hover {
+    background: #0a1f4d;
+}
 
 .note {
     font-size: 12px;
     color: #777;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 footer {
-    font-size: 12px;
+    font-size: 11px;
     color: #aaa;
-    margin-top: 10px;
+    margin-top: 15px;
 }
